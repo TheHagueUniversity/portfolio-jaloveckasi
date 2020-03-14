@@ -57,11 +57,14 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+  width: 50%;
 }
 
 .project-title {
-  padding-right: 3em;
   font-size: 8em !important;
+  padding-right: 1em;
+  font-size: 8em !important;
+
 }
 
 .text {
@@ -95,6 +98,31 @@ img {
   margin-block-end: 0.01em;
 }
 
+#artImage {
+  width: 100%;
+  margin-bottom: -8px;
+    margin-top: -9px;
+}
+
+#artPhoto1 {
+  float: right;
+  padding-right: 10px;
+}
+
+#artPhoto2 {
+  float: left;
+  padding-left: 10px;  
+}
+#artPhoto3 {
+  float: right;
+  padding-top: 10px;
+
+}
+#artPhoto4 {
+  float: left;
+  padding-top: 10px;
+}
+
 /* Containers & Layout */
 .titleContainer {
   padding-top: 50px !important;
@@ -113,7 +141,7 @@ img {
 
 .container {
   text-align: center; 
-  padding: 64px;
+  padding: 20px;
   position: relative;
   width: 100%;
 }

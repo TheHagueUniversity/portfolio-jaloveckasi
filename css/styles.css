@@ -96,7 +96,7 @@ img {
 
 /* Containers & Layout */
 .titleContainer {
-  padding-top: 50px !important;
+  padding-top: 100px !important;
 }
 
 .middle {
@@ -192,6 +192,10 @@ img {
   background-color: #fff;
   text-align: center;
   border: 1px solid #000000;
+}
+
+.mainImage {
+  padding-top: 40px;
 }
 
 /* Responsivness */

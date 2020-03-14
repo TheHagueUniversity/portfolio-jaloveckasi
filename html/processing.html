@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Adobe XD</title>
+	<script src="https://kit.fontawesome.com/5468328430.js"></script>
+	<link href="../css/styles-processing.css" rel="stylesheet" type="text/css">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="../html/main.html">Home</a>
+				</li>
+				<li>
+					<a id="contact" style="cursor: pointer;">Contact</a>
+				</li>
+				<li>
+					<a href="../html/aboutme.html" style="cursor: pointer;">About me</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<div class="white-background colum" id="titleContainer">
+		<div class="row">
+			<div class="column-50" style="padding: 0">
+				<img alt="mockup" id="processingImage" src="../images/processing.jpg">
+				<div class="middle"></div>
+			</div>
+			<div class="column-50" style="padding: 0">
+				<h1 class="project-title">Processing</h1>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="container white-background bottomPadded">
+		<div class="row">
+			<div class="column" id="leadingTextContainer">
+				<h1>Creative Coding</h1>
+				<p><br><span>As a part of my studies at THUAS I got a chance to get familiar with the Processing. Our task was to create an interactive image. In a short period of time I acknowledge the basics of programming and I was able to see how much work is behind the simplest actions and animations and how hard is to actualy think in the simple way.For me it is interesting that in programming you can truly see how complex is human brain and how hard it is for us to simplify our demands. 
+				I was inspired by the most famous Joy Division cover and made a crooked line that changes colours with the mouse movement.</span></p>
+			</div>
+			<div class="middle"></div>
+		</div>
+	</div>
+	<div class="container videoContainer white-background">
+		<div class="column-50">
+      <video autoplay muted loop playsinline id="videoProcessing1">
+        <source src="../videos/processing_video_1.mov" type="video/mp4">
+       </video>
+		</div>
+		<div class="column-50">
+      <video autoplay muted loop playsinline id="videoProcessing2">
+        <source src="../videos/processing_video_2.mov" type="video/mp4">
+       </video>
+    </div>
+	</div>
+	<hr>
+	<div class="container videoContainer white-background">
+		<div class="column">
+      <video autoplay muted loop playsinline id="videoProcessing3">
+        <source src="../videos/processing_video_3.mov" type="video/mp4">
+    </video>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="media">
+			<ul>
+				<li class="social-media-container"><i class="fas fa-envelope-square"></i></li>
+				<li class="social-media-container"><i class="fab fa-linkedin"></i></li>
+				<li class="social-media-container"><i class="fab fa-facebook-square"></i></li>
+				<li class="social-media-container"><i class="fab fa-instagram"></i></li>
+			</ul>
+		</div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    $('#contact').on("click",function() {
+      var window_height = $(window).height();
+      var document_height = $(document).height();
+
+      $('html, body').animate({ scrollTop: window_height + document_height }, 1500);
+    })
+  </script>
+</body>
+</html>

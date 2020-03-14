@@ -1,0 +1,282 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 75px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+	margin: 0;
+	list-style: none;
+	text-align: left;
+}
+
+nav li {
+	display: inline-block;
+	margin: 2em;
+	text-align: center;
+}
+
+nav a {
+	text-align: center;
+	font-weight: 900;
+	text-decoration: none;
+	text-transform: uppercase;
+  color: black;
+}
+
+hr {
+  border-style: solid;
+  border-width: 0.05px;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  height: 1px;
+}
+
+/* UI */
+.white-background {
+  background-color: white
+}
+
+.black-background {
+  background-color: black
+}
+
+.project-title {
+  padding-top: 1em;
+  font-size: 5.5em;
+  margin-left: 1.5em;
+}
+
+#videoProcessing1 {
+  float: right;
+  width: 45%;
+  padding-right: 10px
+}
+
+#videoProcessing2 {
+  float: left;
+  width: 45%;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+#videoProcessing3 {
+  margin-bottom: 50px;
+  margin-top: 35px;
+  width: 30%;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.button {
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  margin-top: 50px;
+  background-color:white; 
+	color: black;
+	text-align: center;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+#video {
+  width: 92%;
+  margin-top: 43px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.text-black {
+  color: black;
+}
+
+#leadingTextContainer {
+  padding-left: 9em;
+  padding-right: 9em;
+  font-size: 1.2em;
+}
+
+.bottomPadded {
+  padding-bottom: 20px;
+}
+
+.text {
+  background-color: #0000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.xlarge-font {
+	color: white;
+  text-align: center;
+  font-size: 64px;
+}
+
+/* Containers & Layout */
+.videoContainer {
+  overflow: hidden;
+}
+
+.verticalTextContainer {
+  padding-left: 10vw;
+  padding-top: 20vh;
+  padding-right: 10vw;
+  width: 50%;
+  float: left;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.column-50 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Social Media */
+.media ul li{
+	list-style: none;
+	margin: 10px 30px;
+	display: inline-block;
+	font-size: 20px;
+	padding: 20px 20px;
+	color: #000000;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	transition: .5s;
+}
+
+.social-media-container {
+  width: 65px;
+}
+
+.media ul li:hover {
+	color: #e600ac;
+	border: 1px solid #e600ac;
+	transition: .5s;
+}
+
+.fab .fas {
+  font-size: 22px;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+/* Responsivness */
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  #processingImage {
+    display: none
+  }
+  .project-title {
+    font-size: 3.5em;
+  }
+
+  .verticalTextContainer {
+    padding-top: 10vh !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .verticalTextContainer {
+    padding-top: 5vh !important;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .verticalTextContainer {
+    padding-top: 15vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
